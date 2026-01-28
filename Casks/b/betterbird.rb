@@ -3,8 +3,8 @@ cask "betterbird" do
 
     arch arm: "-arm64", intel: ""
 
-    version "128.9.0esr-bb24"
-    sha256 "f5cf72ae15e99b47f3c35a9764feea651da7f3d95024cbd7b69a94e0c21e876b"
+    version "140.7.1esr-bb18"
+    sha256 "9106b91b9900fc3c2ef48b5dea0014c925d9d61a0ed0d9e9d6dbd0f59349183c"
 
     url "https://www.betterbird.eu/downloads/MacDiskImage/betterbird-#{version}.en-US.mac#{arch}.dmg"
     name "Betterbird"
@@ -18,7 +18,7 @@ cask "betterbird" do
     end
 
     # From Thunderbird system requirements.
-    depends_on macos: ">= :sierra"
+    depends_on macos: ">= :sequoia"
 
     app "Betterbird.app"
 
